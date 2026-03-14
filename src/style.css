@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#outer-container {
+
+    width: 400px;
+    height: 400px;
+    background: #1e1d26;
+    background: linear-gradient(45deg, rgba(30, 29, 38, 1) 0%, rgba(46, 49, 44, 1) 100%);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#steam-logo {
+    opacity: 1;
+    width: 380px;
+    height: 380px;
+    background: #E26B95;
+    background: linear-gradient(35deg, rgba(226, 107, 149, 1) 0%, rgba(232, 131, 238, 1) 48%, rgba(240, 114, 238, 1) 62%, rgba(93, 62, 247, 1) 97%);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#shape-1 {
+    width: 170px;
+    height: calc(60px - 2px);
+    background: #B145EF;
+    background: linear-gradient(0deg, rgba(177, 69, 239, 1) 0%, rgba(211, 96, 238, 1) 48%);
+    position: absolute;
+    top: calc(200px - 2px);
+    right: 250px;
+    transform: rotate(23deg);
+    object-fit: cover;
+    z-index: 4;
+}
+
+
+#shape-1::after {
+    content: "";
+    width: 60px;
+    height: 58px;
+    background: #B145EF;
+    background: linear-gradient(0deg, rgba(177, 69, 239, 1) 0%, rgba(211, 96, 238, 1) 48%);
+    transform: rotate(1deg);
+    border-radius: 50%;
+    position: absolute;
+    right: -35px;
+    box-shadow: 10px 3px 5px 2px #76069f;
+
+}
+
+#shape-2 {
+    width: 103px;
+    height: 103px;
+    border-radius: 50%;
+    background: #9C39EE;
+    background: linear-gradient(35deg, rgba(156, 57, 238, 1) 4%, rgba(225, 113, 226, 1) 51%, rgba(219, 104, 231, 1) 90%, transparent 100%);
+    position: absolute;
+    top: 212px;
+    left: 80px;
+    z-index: 3;
+}
+
+#shape-2::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: #E26B95;
+    background: linear-gradient(35deg, rgba(226, 107, 149, 1) 0%, rgba(240, 114, 238, 1) 62%);
+    border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    opacity: 1;
+    z-index: 2;
+    box-shadow: inset 15px 10px 10px 5px #4b0367;
+}
+
+#shape-3 {
+    height: 400px;
+    width: 400px;
+    clip-path: polygon(48% 37%, 65% 56%, 47% 69%, 35% 56%);
+    position: absolute;
+    top: -12px;
+
+
+
+    left: -10px;
+    background: #DB68E7;
+    background: linear-gradient(50deg, rgba(219, 104, 231, 1) 0%, rgba(219, 104, 231, 1) 45%, rgba(238, 145, 220, 1) 60%);
+    z-index: 2;
+}
+
+#shape-4 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    left: 181px;
+    top: 74px;
+    background: #E074E4;
+    background: linear-gradient(40deg, rgb(224, 119, 228) 5%, rgba(230, 124, 211, 1) 60%, rgba(238, 145, 206, 1) 100%);
+    z-index: 3;
+
+}
+
+#shape-4::after {
+    content: "";
+    width: 95px;
+    height: 95px;
+    background: #E26B95;
+    background: linear-gradient(35deg, rgba(226, 107, 149, 0.5) 0%, rgba(240, 114, 238, 1) 40%, rgba(93, 62, 247, 0.4) 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    opacity: 1;
+    z-index: 2;
+    box-shadow: inset 7px 11px 5px 2px hsl(311, 93%, 17%);
+}
+
+#shape-4::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background: #ed8cca;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    opacity: 1;
+    z-index: 3;
+    box-shadow: 6px 3px 4px 2px hsl(303.72, 92.81%, 27.25%);
+}
+
+#shape-1-shadow {
+    width: 120px;
+    height: calc(60px - 2px);
+    position: absolute;
+    top: 220px;
+    right: 255px;
+    transform: rotate(23deg);
+    background: #280409;
+    background: linear-gradient(35deg, rgba(40, 4, 9, 1) 0%, rgba(37, 3, 20, 1) 100%);
+    transform: rotate(25deg);
+    filter: blur(5px);
+}
+
+#shape-2-shadow {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #280409;
+    background: linear-gradient(35deg, rgba(40, 4, 9, 1) 0%, rgba(37, 3, 20, 1) 100%);
+    position: absolute;
+    top: 250px;
+    left: 105px;
+    filter: blur(5px);
+
+}
+
+#shape-3-shadow {
+    height: 50px;
+    width: 100px;
+
+    position: absolute;
+    top: 216px;
+    left: 150px;
+    background: #2A0311;
+    background: linear-gradient(35deg, rgba(42, 3, 17, 1) 0%, rgba(37, 3, 22, 1) 56%, rgba(34, 3, 27, 1) 100%);
+    filter: blur(5px);
+    transform: rotate(-36deg);
+}
+
+#shape-4-shadow {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: relative;
+    left: 185px;
+    top: 95px;
+    background: #22021B;
+    background: linear-gradient(35deg, rgba(34, 2, 27, 1) 0%, rgba(34, 2, 38, 1) 100%);
+
+    filter: blur(5px);
+    
+}
+
+#shape-4-shadow::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    /* Offset downward */
+    left: 20px;
+    /* Offset to the right */
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    /* The "Linear Gradient Shadow" */
+    background: transparent;
+
+    filter: blur(12px);
+    /* Creates the soft fade */
+    border-radius: 50%;
+    opacity: 0.7;
+}
